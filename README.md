@@ -1,7 +1,16 @@
 # svelte-infinite-scroll
 
+스벨트 무한스크롤 `sveltekit + bootstrap`
 
+[live demo](https://svelte-infinite-scroll-gamma.vercel.app/)
 
+```sveltehtml
+<div class="overflow-y-auto h-100">
+    <InfiniteScroll on:loadMore={loadMore} thresholdPos={300} existMore={true}>
+      // Elements
+    </InfiniteScroll>
+</div>
+```
 
 ## Developing
 
