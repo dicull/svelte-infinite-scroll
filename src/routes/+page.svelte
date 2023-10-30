@@ -18,10 +18,10 @@
 	};
 
 	const getCards = async (page) => {
-		// isLoading = true;
+		isLoading = true;
 		const response = await Service.getCards(page, perPage);
 
-		// isLoading = false;
+		isLoading = false;
 		if (response.success) {
 			existMore = response.remains > 0;
 
